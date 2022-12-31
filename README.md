@@ -24,6 +24,7 @@ Examples on how to use Go's features, such as:
 * Loops;
 * Methods;
 * Interfaces;
+* Concurrency and concurrency patterns;
 
 ## 🛠 Technologies
 
