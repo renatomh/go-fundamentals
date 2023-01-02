@@ -25,6 +25,7 @@ Examples on how to use Go's features, such as:
 * Methods;
 * Interfaces;
 * Concurrency and concurrency patterns;
+* Testing;
 
 ## 🛠 Technologies
 
@@ -41,12 +42,14 @@ During the development of this project, the following technologies were used:
 Here's a set of useful commands when using Go:
 
 ```bash
+$ go help # Show the different available commands
 $ go run [fileName.go] # Running Go files
 $ go mod init [moduleName] # Creating new modules (similar to JavaScript "package.json" files)
 $ go build # Creating executable files
 $ go install # Creating executable files and saving in the directory where Go is installed
 $ go get [packageUrl] # Installs external packages, for example: "go get github.com/badoux/checkmail"
 $ go mod tidy # Remove unused packages from the "go.mod" file
+$ go test # Run the test codes ("filename_test.go") from the directory where the command was executed
 ```
 
 ### Documentation:
