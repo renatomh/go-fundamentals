@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            color: #c9c9c9;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        marquee {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Legolas! What do your Elf eyes see?!</h2>
+
+    <!--
+        {
+            Name: "The hobbits",
+            Email: "the.hobbits@isengard.com"
+        }
+    -->
+    <marquee scrolldelay=5 direction=left>
+        <h4>They're taking {{ .Name }} to Isengard, gard, gard, gard, gard</h4>
+    </marquee>
+    <marquee scrolldelay=5 direction=right>
+        <h4>They're taking {{ .Name }} to Isengard, gard, gard, gard, gard!</h4>
+    </marquee>
+    <marquee scrollamount=15>
+        <h4>{{ .Name }} {{ .Name }} {{ .Name }} {{ .Name }} to Isengard, to Isengard!</h4>
+    </marquee>
+
+    <button id="button" onclick="">The Balrog of Morgoth!</button>
+
+    <script>
+        // Getting the button by its ID
+        var button = document.getElementById("button");
+
+        // Function to be called when button is clicked
+        button.onclick = function() {
+            alert("What did you say?");
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -27,6 +27,8 @@ Examples on how to use Go's features, such as:
 * Concurrency and concurrency patterns;
 * Testing;
 * JSON;
+* HTTP;
+* HTML/CSS/JS;
 
 ## 🛠 Technologies
 
