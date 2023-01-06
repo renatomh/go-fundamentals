@@ -29,6 +29,8 @@ Examples on how to use Go's features, such as:
 * JSON;
 * HTTP;
 * HTML/CSS/JS;
+* Databases;
+* Basic CRUD;
 
 ## 🛠 Technologies
 
