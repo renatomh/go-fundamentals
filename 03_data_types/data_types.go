@@ -11,9 +11,9 @@ import (
 func main() {
 	// Number data types
 	// Integer values:
-	// * int8 (up to 8 bits);
-	// * int16 (up to 16 bits);
-	// * int32 (up to 32 bits);
+	// * int8 (up to 8 bits)
+	// * int16 (up to 16 bits)
+	// * int32 (up to 32 bits)
 	// * int64 (up to 64 bits)
 	var intNumber16 int16 = 100
 	fmt.Println(intNumber16)
@@ -36,7 +36,7 @@ func main() {
 	fmt.Println(uintNumber2)
 
 	// Float values:
-	// * float32 (up to 32 bits);
+	// * float32 (up to 32 bits)
 	// * float64 (up to 64 bits)
 	var floatNumber1 float32 = 123.45
 	fmt.Println(floatNumber1)
@@ -54,7 +54,7 @@ func main() {
 	str2 := "Text Value 2"
 	fmt.Println(str2)
 
-	// If we wnt to get the ASCII value for a character
+	// If we want to get the ASCII value for a character
 	// We use single quotes ''
 	asciiCharNumber := 'B'
 	fmt.Println(asciiCharNumber)

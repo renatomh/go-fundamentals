@@ -31,7 +31,7 @@ func weekDay(number int) string {
 
 // Alternative function to return the week day from number
 func altWeekDay(number int) string {
-	// Initializing value to be returend
+	// Initializing value to be returned
 	var weekDay string
 
 	// Creating the switch structure

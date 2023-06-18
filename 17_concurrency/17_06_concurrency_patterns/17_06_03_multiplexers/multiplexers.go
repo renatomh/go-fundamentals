@@ -28,10 +28,10 @@ func main() {
 // Creating the multiplexer from the different input channels, directing data to the
 // output channel which will be returned by the function
 func mux(inputChannel1, inputChannel2, inputChannel3 <-chan string) <-chan string {
-	// Initizaling the output channel
+	// Initilazing the output channel
 	outputChannel := make(chan string)
 
-	// Goroutine to
+	// Goroutine to select available channel for output redirection
 	go func() {
 		for {
 			// Whichever input channel is ready will be used to direct data to the output channel

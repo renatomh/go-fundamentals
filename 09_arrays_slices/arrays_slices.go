@@ -50,7 +50,7 @@ func main() {
 	fmt.Println(slice2)
 
 	// Changing array elements by index will reflect on the slices (works like pointers)
-	array2[1] = "2. New Poisition 2"
+	array2[1] = "2. New Position 2"
 	fmt.Println(slice2)
 
 	fmt.Println("----------")

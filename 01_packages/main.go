@@ -16,6 +16,6 @@ func main() {
 	auxiliar.Write()
 
 	// Checking for an email format
-	erro := checkmail.ValidateFormat("devbook@gmail.com")
-	fmt.Println(erro)
+	err := checkmail.ValidateFormat("devbook@gmail.com")
+	fmt.Println(err)
 }

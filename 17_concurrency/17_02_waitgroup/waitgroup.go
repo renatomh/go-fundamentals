@@ -8,11 +8,14 @@ import (
 	"time"
 )
 
+// With WaitGroups, we can sync the execution of goroutines, such that once they're all done
+// we'll consider the main execution is completed
+
 // Main function to be executed
 func main() {
-	fmt.Println("WatiGroup")
+	fmt.Println("WaitGroup")
 
-	// In this scenario, the first text will be written 5x, then, the seconed one for 5x as well
+	// In this scenario, the first text will be written 5x, then, the second one for 5x as well
 	//write("Just keep swimming")
 	//write("Escape!")
 

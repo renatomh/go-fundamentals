@@ -24,8 +24,8 @@ func main() {
 	text := "Inside 'main' function"
 	fmt.Println(text)
 
-	// For exemplo, even though the 'text' variable was defined at 'main' and 'closure', when calling
-	// the closure function, it'll remeber its own 'text' variable
+	// For example, even though the 'text' variable was defined at 'main' and 'closure', when calling
+	// the closure function, it'll remember its own 'text' variable
 	newFunction := closure()
 	newFunction()
 

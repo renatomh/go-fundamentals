@@ -19,7 +19,7 @@ func (u user) save() {
 	fmt.Printf("Saving '%s' user's data on database\n", u.name)
 }
 
-// Creating a method for the 'user' struct to check if oser's age is over 18
+// Creating a method for the 'user' struct to check if user's age is over 18
 func (u user) ofLegalAge() bool {
 	return u.age >= 18
 }

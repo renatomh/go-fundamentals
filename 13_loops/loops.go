@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Go has onlye the "for" loop structure
+// Go has only the "for" loop structure
 
 // Main function to be executed
 func main() {
@@ -18,7 +18,7 @@ func main() {
 
 	// Creating a simple for loop
 	for i < 10 {
-		// Waiting for one sceond before continuing
+		// Waiting for one second before continuing
 		time.Sleep(time.Second * 1)
 		fmt.Println("Adding up \"i\"", i)
 		i++
@@ -70,7 +70,7 @@ func main() {
 
 	// Range for structs are not available
 
-	// We can have infinit loops, like so
+	// We can have infinite loops, like so
 	// for {
 	//		fmt.Println("Executing forever")
 	//		time.Sleep(time.Second)

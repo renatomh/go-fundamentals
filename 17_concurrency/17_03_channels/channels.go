@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Channels allows sending and receiving data
+// Channels allows both sending and receiving data, syncing goroutines
 
 // Main function to be executed
 func main() {
@@ -28,8 +28,9 @@ func main() {
 			// Waiting for the channel to receive the value and checking if it's open
 			message, open := <-channel
 			// If channel is not open, we exit the loop
+			// We need to check if channel is open, in order to avoid deadlocks
 			if !open {
-				break // Exist the loop
+				break // Exit the loop
 			}
 			// Showing the received message
 			fmt.Println(message)

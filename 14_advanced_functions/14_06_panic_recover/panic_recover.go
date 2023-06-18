@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-// When a code exeuction 'panics', it'll call all the 'defer' statements
+// When a code execution 'panics', it'll call all the 'defer' statements
 // There, we can try to recover the code execution
 func recoverExecution() {
 	if r := recover(); r != nil {

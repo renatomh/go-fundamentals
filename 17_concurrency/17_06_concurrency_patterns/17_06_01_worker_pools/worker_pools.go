@@ -32,7 +32,7 @@ func main() {
 
 	// Showing the results for the user
 	for i := 0; i < fibonacci_position; i++ {
-		// Whenver the result is sent to the channel, it's received here
+		// Whenever the result is sent to the channel, it's received here
 		result := <-results
 		fmt.Println(result)
 	}
