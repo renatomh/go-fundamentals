@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-// The Unmarshal function JSON to Go objects
+// The Unmarshal function converts JSON to Go objects
 
 type dog struct {
 	// We can define the JSON keys on the struct fields
@@ -23,7 +23,7 @@ type namelessDog struct {
 }
 
 func main() {
-	// Creating a new dog JSON
+	// Creating a new dog formatted as JSON
 	dogJSON := `{"name":"Rex","breed":"Dalmata","age":3}`
 
 	// Creating a new var to receive the dog data
@@ -55,7 +55,7 @@ func main() {
 	}
 	fmt.Println(d2)
 
-	// In this case, all the JSON values must respect the map type (in this case, should be strings)
+	// Here, all the JSON values must respect the map type (in this case, should be strings)
 	// For example, the following object would lead to an error, since we are using an int for the age
 	errorDogJSON := `{"name":"Max","breed":"Golden","age":12}`
 	errorDog := make(map[string]string)
