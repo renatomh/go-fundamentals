@@ -31,6 +31,7 @@ Examples on how to use Go's features, such as:
 * HTML/CSS/JS;
 * Databases;
 * Basic CRUD;
+* Common algorithms implementation (quicksort, bubble sort, etc.);
 
 ## 🛠 Technologies
 
