@@ -37,6 +37,20 @@ func (l *List) add(value int) {
 	currNode.next = newNode
 }
 
+// Method to add a new Node to the beggining of the list
+func (l *List) addBegin(value int) {
+	// If the list does not have a head (first node yet)
+	if l.head == nil {
+		// We simply set the new Node as the head and return
+		l.head = &Node{data: value}
+		return
+	}
+
+	// Creating the new Node to be added, with provided data, and setting the previous head as next Node
+	newNode := &Node{data: value, next: l.head}
+	l.head = newNode
+}
+
 // Method to remove an existing Node from the list
 func (l *List) remove(value int) {
 	// If the list is empty, we simply return
@@ -102,5 +116,16 @@ func main() {
 	printList(list)
 	list.remove(4)
 	fmt.Println("List after removing 4: ")
+	printList(list)
+
+	// Adding new values to the beggining of the list
+	list.addBegin(7)
+	list.addBegin(9)
+	// And also new values to the end of the list
+	list.add(8)
+	list.add(11)
+
+	// Showing the updated list
+	fmt.Println("List after adding items to the beginning and the end: ")
 	printList(list)
 }
